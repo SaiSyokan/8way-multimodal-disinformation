@@ -2,7 +2,7 @@
 
 Official repository for our WWW 2026 short paper on **8-way multimodal disinformation analysis**.
 
-This project introduces a unified **8-way taxonomy** for multimodal disinformation, where each image-text pair is analyzed along three axes: **image veracity**, **text veracity**, and **cross-modal consistency**. By combining these three binary properties, the task is formulated as a closed-set classification problem with **eight exhaustive classes**.
+This project introduces a unified **8-way taxonomy** of multimodal disinformation, in which each image-text pair is analyzed along three axes: **image veracity**, **text veracity**, and **cross-modal consistency**. By combining these three binary properties, the task is formulated as a closed-set classification problem with **eight exhaustive classes**.
 
 This repository serves as the official project page for the benchmark. It currently provides the task overview, label taxonomy, example data format, and release roadmap. The full dataset, benchmark resources, and additional code will be released in future updates.
 
@@ -10,7 +10,7 @@ This repository serves as the official project page for the benchmark. It curren
 
 ## News
 
-- **[Mar 2026]** Repository initialized.
+- **[Feb 2026]** Repository initialized.
 - **[Mar 2026]** README, task description, and example annotation format released.
 - **[To Do]** Dataset download link will be added after the conference presentation.
 - **[To Do]** Additional benchmark code, evaluation scripts, and release details will be updated in this repository.
@@ -29,8 +29,8 @@ Existing formulations often treat these cases inconsistently, using different la
 
 We define multimodal disinformation using three binary axes:
 
-- **Image veracity**: whether the image content is true or false,
-- **Text veracity**: whether the textual content is true or false,
+- **Image veracity**: whether the image content has a verifiable factual violation or not,
+- **Text veracity**: whether the textual content has a verifiable factual violation or not,
 - **Cross-modal consistency**: whether the image and text are semantically consistent with each other.
 
 This leads to a unified **8-way label space**, which covers the full combination of the three axes.
@@ -44,6 +44,8 @@ Given an **image-text pair**, the goal is to predict one of the **eight classes*
 - image truth value: **T / F**
 - text truth value: **T / F**
 - image-text consistency: **T / F**
+
+![tri-axis](/Users/cuishuhan/Desktop/tri-axis.png)
 
 This formulation provides:
 
