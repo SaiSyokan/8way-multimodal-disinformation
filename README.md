@@ -139,4 +139,68 @@ By explicitly modeling **image truth**, **text truth**, and **cross-modal consis
 - src/: code-related resources to be added in future updates
 - bibtex/: citation file for the paper
 
+---
 
+## Example Data Format
+
+The full dataset is not yet released, but the benchmark will follow a structured annotation format similar to the example below.
+
+```
+{
+  "id": "sample_0001",
+  "image_path": "images/sample_0001.jpg",
+  "text": "A caption or claim associated with the image.",
+  "label": "TFF",
+  "image_veracity": true,
+  "text_veracity": false,
+  "consistency": false,
+  "source": "source_name",
+  "split": "test"
+}
+```
+
+---
+
+## Example Fields
+
+- id: unique sample identifier
+- image_path: relative path to the image file
+- text: associated textual claim, caption, or post content
+- label: 8-way class label
+- image_veracity: binary label for image truthfulness
+- text_veracity: binary label for text truthfulness
+- consistency: binary label for semantic consistency between image and text
+- source: source dataset or collection origin
+- split: benchmark split (e.g., train / val / test)
+
+Please note that the final released version may include additional metadata fields and more detailed annotation-related information.
+
+---
+
+## What Is Available Now
+
+At the current stage, this repository provides:
+- a high-level introduction to the 8-way task,
+- the unified label taxonomy,
+- an example data format,
+- the project structure and release roadmap.
+
+--- 
+
+## Citation
+
+If you find this repository useful, please cite our paper.
+
+```bibtex
+@inproceedings{cui2026eightway,
+  author    = {Shuhan Cui and Ruimin Chu and Hanrui Wang and Patrick H. Chen and Ching-Chun Chang and Isao Echizen},
+  title     = {An 8-Way Taxonomy for Multimodal Disinformation and Detection Benchmark},
+  booktitle = {Proceedings of the ACM Web Conference 2026 (WWW '26)},
+  year      = {2026},
+  location  = {Dubai, United Arab Emirates},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  numpages  = {4},
+  doi       = {10.1145/3774904.3792906}
+}
+```
