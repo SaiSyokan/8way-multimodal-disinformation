@@ -1,20 +1,20 @@
 <p align="center">
-  <img src="assets/logo.png" alt="8-Way Multimodal Disinformation logo" width="220">
+  <img src="assets/logo-icon.png" alt="8-Way Multimodal Disinformation logo" width="170">
 </p>
 
 <h1 align="center">8-Way Multimodal Disinformation</h1>
 
 <p align="center">
-  Official repository for our WWW 2026 short paper on 8-way multimodal disinformation analysis.
+  Official repository for our WWW 2026 short paper on <b>8-way multimodal disinformation analysis</b>.
 </p>
 
-# 8-Way Multimodal Disinformation
-
-Official repository for our WWW 2026 short paper on **8-way multimodal disinformation analysis**.
-
-This project introduces a unified **8-way taxonomy** of multimodal disinformation, in which each image-text pair is analyzed along three axes: **image veracity**, **text veracity**, and **cross-modal consistency**. By combining these three binary properties, the task is formulated as a closed-set classification problem with **eight exhaustive classes**.
-
-This repository serves as the official project page for the benchmark. It currently provides the task overview, label taxonomy, example data format, and release roadmap. The full dataset, benchmark resources, and additional code will be released in future updates.
+<p align="center">
+  <a href="#news">News</a> •
+  <a href="#overview">Overview</a> •
+  <a href="#8-way-label-taxonomy">Taxonomy</a> •
+  <a href="#example-data-format">Data Format</a> •
+  <a href="#citation">Citation</a>
+</p>
 
 ---
 
