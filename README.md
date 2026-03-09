@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="assets/logo.png" alt="8-Way Multimodal Disinformation logo" width="220">
+</p>
+
+<h1 align="center">8-Way Multimodal Disinformation</h1>
+
+<p align="center">
+  Official repository for our WWW 2026 short paper on 8-way multimodal disinformation analysis.
+</p>
+
 # 8-Way Multimodal Disinformation
 
 Official repository for our WWW 2026 short paper on **8-way multimodal disinformation analysis**.
@@ -45,7 +55,7 @@ Given an **image-text pair**, the goal is to predict one of the **eight classes*
 - text truth value: **T / F**
 - image-text consistency: **T / F**
 
-![tri-axis](/examples/tri-axis_and_examples.png)
+![tri-axis](assets/tri-axis_and_examples.png)
 
 This formulation provides:
 
