@@ -45,7 +45,7 @@ Given an **image-text pair**, the goal is to predict one of the **eight classes*
 - text truth value: **T / F**
 - image-text consistency: **T / F**
 
-![tri-axis](/examples/tri-axis and examples.png)
+![tri-axis](/examples/tri-axis\ and\ examples.png)
 
 This formulation provides:
 
