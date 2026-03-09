@@ -126,3 +126,17 @@ By explicitly modeling **image truth**, **text truth**, and **cross-modal consis
 │   └── README.md
 └── bibtex/
     └── citation.bib
+```
+
+---
+
+## Directory Guide
+
+- assets/: figures used in the README or documentation
+- docs/: detailed documentation for task definition, label taxonomy, data format, and release plan
+- examples/: toy examples showing annotation format and sample entries
+- data/: dataset release entry point and download instructions
+- src/: code-related resources to be added in future updates
+- bibtex/: citation file for the paper
+
+
