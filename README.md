@@ -45,7 +45,7 @@ Given an **image-text pair**, the goal is to predict one of the **eight classes*
 - text truth value: **T / F**
 - image-text consistency: **T / F**
 
-![tri-axis](/Users/cuishuhan/Desktop/tri-axis.png)
+![tri-axis](/examples/tri-axis.png)
 
 This formulation provides:
 
@@ -126,8 +126,6 @@ By explicitly modeling **image truth**, **text truth**, and **cross-modal consis
 │   └── README.md
 ├── src/
 │   └── README.md
-└── bibtex/
-    └── citation.bib
 ```
 
 ---
