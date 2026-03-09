@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-icon.png" alt="8-Way Multimodal Disinformation logo" width="170">
+  <img src="assets/logo.png" alt="8-Way Multimodal Disinformation logo" width="170">
 </p>
 
 <h1 align="center">8-Way Multimodal Disinformation</h1>
