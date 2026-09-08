@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.DS_Store
+.env
+*service-account*.json
+application_default_credentials.json
+*.pem
+.venv/
+configs/dataset_builder.yaml
+# Keep release metadata and documentation in data/, but never commit downloaded media.
+/data/OctantFake/
+/data/**/*.jpg
+/data/**/*.jpeg
+/data/**/*.png
+/evidence/
+/predictions/
+/release/
+/checkpoints/
+*.log

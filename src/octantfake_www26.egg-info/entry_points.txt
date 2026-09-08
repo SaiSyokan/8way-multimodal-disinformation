@@ -1,2 +1,0 @@
-[console_scripts]
-octantfake = octantfake_www.cli:main
