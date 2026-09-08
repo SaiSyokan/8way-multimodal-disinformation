@@ -84,7 +84,7 @@ OctantFake/
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("SaiSyokan/OctantFake")
+dataset = load_dataset("Syokan/OctantFake")
 calibration = dataset["validation"]
 test = dataset["test"]
 ```

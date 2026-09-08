@@ -28,7 +28,7 @@ python -m pip install -e '.[dataset]'
 hf auth login
 python scripts/upload_dataset.py \
   --dataset-dir /path/to/OctantFake-dataset-v1.0.0 \
-  --repo-id SaiSyokan/OctantFake
+  --repo-id Syokan/OctantFake
 ```
 
 The helper creates or updates a **private** dataset repository by default. Uploads use the Hub client,
@@ -48,7 +48,7 @@ Before opening access, confirm that:
 Run a clean download and full checksum validation on a second location when practical:
 
 ```bash
-hf download SaiSyokan/OctantFake --repo-type dataset --local-dir /tmp/OctantFake-check
+hf download Syokan/OctantFake --repo-type dataset --local-dir /tmp/OctantFake-check
 octantfake validate /tmp/OctantFake-check/metadata/octantfake.jsonl \
   --check-files --media-root /tmp/OctantFake-check
 ```

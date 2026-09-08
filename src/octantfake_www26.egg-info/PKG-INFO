@@ -49,7 +49,7 @@ Requires-Dist: huggingface-hub>=0.27; extra == "dataset"
   <p><strong>An 8-Way Taxonomy for Multimodal Disinformation and Detection Benchmark</strong></p>
   <p>
     <a href="https://doi.org/10.1145/3774904.3792906"><img src="https://img.shields.io/badge/DOI-10.1145%2F3774904.3792906-blue" alt="DOI"></a>
-    <a href="https://huggingface.co/datasets/SaiSyokan/OctantFake"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-OctantFake-yellow" alt="Hugging Face dataset"></a>
+    <a href="https://huggingface.co/datasets/Syokan/OctantFake"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-OctantFake-yellow" alt="Hugging Face dataset"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/code%20license-MIT-green" alt="MIT license"></a>
     <img src="https://img.shields.io/badge/python-%E2%89%A53.10-3776AB" alt="Python 3.10 or later">
   </p>
@@ -130,7 +130,7 @@ The committed examples are synthetic and contain no benchmark media.
 
 ## OctantFake dataset
 
-The media is hosted in a separate [Hugging Face dataset repository](https://huggingface.co/datasets/SaiSyokan/OctantFake),
+The media is hosted in a separate [Hugging Face dataset repository](https://huggingface.co/datasets/Syokan/OctantFake),
 while exact experiment manifests and checksums are versioned under [`data/`](data/).
 
 | Property | Value |
@@ -146,7 +146,7 @@ Download and validate the release:
 
 ```bash
 python -m pip install --upgrade huggingface_hub
-hf download SaiSyokan/OctantFake --repo-type dataset --local-dir data/OctantFake
+hf download Syokan/OctantFake --repo-type dataset --local-dir data/OctantFake
 octantfake validate data/OctantFake/metadata/octantfake.jsonl \
   --check-files --media-root data/OctantFake
 ```
@@ -156,7 +156,7 @@ Or load the ImageFolder view directly:
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("SaiSyokan/OctantFake")
+dataset = load_dataset("Syokan/OctantFake")
 calibration = dataset["validation"]  # the paper calls this split "calibration"
 test = dataset["test"]
 ```
