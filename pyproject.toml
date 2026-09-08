@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "octantfake-www26"
+version = "1.0.0"
+description = "Official OctantFake and OctantAgent code for WWW 2026"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Shuhan Cui"},
+  {name = "Ruimin Chu"},
+  {name = "Hanrui Wang"},
+  {name = "Patrick H. Chen"},
+  {name = "Ching-Chun Chang"},
+  {name = "Isao Echizen"},
+]
+dependencies = ["PyYAML>=6.0"]
+
+[project.optional-dependencies]
+builder = [
+  "numpy>=1.24",
+  "Pillow>=10.0",
+  "torch>=2.1",
+  "transformers>=4.42",
+]
+evidence = [
+  "google-cloud-vision>=3.7",
+  "requests>=2.31",
+]
+inference = [
+  "Pillow>=10.0",
+  "torch>=2.1",
+]
+dataset = [
+  "huggingface-hub>=0.27",
+]
+
+[project.scripts]
+octantfake = "octantfake_www.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

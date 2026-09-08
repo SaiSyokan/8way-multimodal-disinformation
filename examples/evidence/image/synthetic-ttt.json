@@ -1,0 +1,8 @@
+{
+  "sample_id": "synthetic-ttt",
+  "provider": "synthetic",
+  "best_guess_labels": ["synthetic example"],
+  "web_entities": [{"description": "schema demonstration", "score": 1.0}],
+  "pages_with_matching_images": [],
+  "visually_similar_images": []
+}

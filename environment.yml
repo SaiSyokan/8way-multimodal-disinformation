@@ -1,0 +1,8 @@
+name: octantfake
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip>=23
+  - pip:
+      - -e ".[builder,evidence,inference,dataset]"

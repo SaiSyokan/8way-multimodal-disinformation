@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "samples": 8800,
+  "calibration_samples": 800,
+  "test_samples": 8000,
+  "label_distribution": {
+    "FFF": 1100,
+    "FFT": 1100,
+    "FTF": 1100,
+    "FTT": 1100,
+    "TFF": 1100,
+    "TFT": 1100,
+    "TTF": 1100,
+    "TTT": 1100
+  },
+  "calibration_label_distribution": {
+    "FFF": 101,
+    "FFT": 102,
+    "FTF": 107,
+    "FTT": 103,
+    "TFF": 90,
+    "TFT": 111,
+    "TTF": 92,
+    "TTT": 94
+  },
+  "test_label_distribution": {
+    "FFF": 999,
+    "FFT": 998,
+    "FTF": 993,
+    "FTT": 997,
+    "TFF": 1010,
+    "TFT": 989,
+    "TTF": 1008,
+    "TTT": 1006
+  },
+  "image_source_distribution": {
+    "COSMOS": 273,
+    "DF2023": 283,
+    "DGM4": 4536,
+    "Fakeddit": 228,
+    "MEIR": 356,
+    "MMFakeBench": 947,
+    "MS-COCO": 590,
+    "NewsCLIPpings": 547,
+    "OpenImages": 510,
+    "PS-Battles": 172,
+    "VERITE": 358
+  },
+  "text_source_distribution": {
+    "COSMOS": 273,
+    "DGM4": 4119,
+    "FakeNewsNet": 709,
+    "LIAR": 365,
+    "MEIR": 356,
+    "MMFakeBench": 947,
+    "NewsCLIPpings": 547,
+    "PolitiFact": 870,
+    "VERITE": 358,
+    "WELFake": 256
+  },
+  "byte_identical_image_groups": 706,
+  "byte_identical_image_copies_beyond_first": 1164,
+  "repeated_normalized_text_groups": 495,
+  "repeated_normalized_text_copies_beyond_first": 883,
+  "calibration_test_image_group_overlap": 138,
+  "calibration_test_text_group_overlap": 111
+}

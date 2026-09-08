@@ -1,0 +1,2 @@
+{"sample_id":"synthetic-ttt","gold_label":"TTT","prediction":"TTT"}
+{"sample_id":"synthetic-fff","gold_label":"FFF","prediction":null,"error":"synthetic malformed output example"}

@@ -1,0 +1,28 @@
+seed: 2026
+class_quota: 1100
+calibration_size: 800
+test_size: 8000
+meir_max_text_length: 160
+max_attempts_per_sample: 500
+media_root: ../data
+
+clip:
+  model: openai/clip-vit-base-patch32
+  device: null
+  match_threshold: 0.32
+  mismatch_threshold: 0.22
+
+# Paths are resolved relative to this configuration file.
+multimodal_sources:
+  COSMOS: ../data/sources/COSMOS
+  DGM4: ../data/sources/DGM4
+  MEIR: ../data/sources/MEIR
+  MMFakeBench: ../data/sources/MMFakeBench
+  NewsCLIPpings: ../data/sources/NewsCLIPpings
+  VERITE: ../data/sources/VERITE
+
+single_modality_pools:
+  images: ../data/pools/images.jsonl
+  texts: ../data/pools/texts.jsonl
+
+output_root: ../release

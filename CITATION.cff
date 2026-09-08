@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use OctantFake or OctantAgent, please cite this paper."
+title: "OctantFake and OctantAgent (WWW'26)"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Cui
+    given-names: Shuhan
+  - family-names: Chu
+    given-names: Ruimin
+  - family-names: Wang
+    given-names: Hanrui
+  - family-names: Chen
+    given-names: Patrick H.
+  - family-names: Chang
+    given-names: Ching-Chun
+  - family-names: Echizen
+    given-names: Isao
+doi: 10.1145/3774904.3792906
+license: MIT

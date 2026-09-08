@@ -1,0 +1,12 @@
+{
+  "sample_id": "synthetic-ttt",
+  "provider": "synthetic",
+  "query": "synthetic example",
+  "items": [
+    {
+      "title": "Synthetic evidence item",
+      "link": "https://example.org/evidence",
+      "snippet": "This file demonstrates the evidence schema and contains no benchmark evidence."
+    }
+  ]
+}

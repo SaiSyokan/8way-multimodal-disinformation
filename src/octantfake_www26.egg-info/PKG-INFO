@@ -1,3 +1,48 @@
+Metadata-Version: 2.1
+Name: octantfake-www26
+Version: 1.0.0
+Summary: Official OctantFake and OctantAgent code for WWW 2026
+Author: Shuhan Cui, Ruimin Chu, Hanrui Wang, Patrick H. Chen, Ching-Chun Chang, Isao Echizen
+License: MIT License
+        
+        Copyright (c) 2026 The OctantFake authors
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML>=6.0
+Provides-Extra: builder
+Requires-Dist: numpy>=1.24; extra == "builder"
+Requires-Dist: Pillow>=10.0; extra == "builder"
+Requires-Dist: torch>=2.1; extra == "builder"
+Requires-Dist: transformers>=4.42; extra == "builder"
+Provides-Extra: evidence
+Requires-Dist: google-cloud-vision>=3.7; extra == "evidence"
+Requires-Dist: requests>=2.31; extra == "evidence"
+Provides-Extra: inference
+Requires-Dist: Pillow>=10.0; extra == "inference"
+Requires-Dist: torch>=2.1; extra == "inference"
+Provides-Extra: dataset
+Requires-Dist: huggingface-hub>=0.27; extra == "dataset"
+
 <div align="center">
   <img src="assets/logo.png" width="210" alt="OctantFake logo">
   <h1>OctantFake & OctantAgent</h1>
@@ -30,7 +75,7 @@ checks these axes independently with external evidence and fuses the decisions i
 
 ## News
 
-- **July 2026:** Code, prompts, construction tools, exact experiment metadata, and the OctantFake
+- **September 2026:** Code, prompts, construction tools, exact experiment metadata, and the OctantFake
   v1.0.0 release package are available.
 - An extended version of this work will be released with subsequent journal work.
 
