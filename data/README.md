@@ -28,5 +28,4 @@ octantfake validate data/metadata/test.jsonl \
 ```
 
 See [the dataset card](DATASET_CARD.md), [the terms of use](TERMS_OF_USE.md), and
-[`docs/DATASET.md`](../docs/DATASET.md) for construction details. Repository maintainers should use
-[`docs/DATASET_RELEASE.md`](../docs/DATASET_RELEASE.md) for the private-first upload workflow.
+[`docs/DATASET.md`](../docs/DATASET.md) for construction details.

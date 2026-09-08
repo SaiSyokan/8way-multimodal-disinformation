@@ -34,9 +34,6 @@ inference = [
   "Pillow>=10.0",
   "torch>=2.1",
 ]
-dataset = [
-  "huggingface-hub>=0.27",
-]
 
 [project.scripts]
 octantfake = "octantfake_www.cli:main"

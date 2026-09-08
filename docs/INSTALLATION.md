@@ -24,7 +24,7 @@ python -m pip install -e '.[inference]'  # local model adapter prerequisites
 python -m pip install -e '.[dataset]'    # Hugging Face upload helper
 ```
 
-Use `python -m pip install -e '.[builder,evidence,inference,dataset]'` to install all groups. On
+Use `python -m pip install -e '.[builder,evidence,inference]'` to install all groups. On
 Windows, replace the activation command with `.venv\\Scripts\\activate`.
 
 ### Conda

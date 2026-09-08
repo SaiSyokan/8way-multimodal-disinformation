@@ -44,7 +44,7 @@ checks these axes independently with external evidence and fuses the decisions i
 - **Auditable method:** prompt templates, evidence formats, parsing rules, run metadata, and the common
   8-way evaluator are included.
 - **Reproducible construction:** source adapters, CLIP thresholds, deterministic selection, portable
-  manifests, and release-preparation scripts are versioned.
+  manifests, and release manifests and checksums are versioned
 
 ## Installation
 
@@ -65,7 +65,7 @@ python -m pip install -e .
 Optional dependency groups can be installed separately or together:
 
 ```bash
-python -m pip install -e '.[builder,evidence,inference,dataset]'
+python -m pip install -e '.[builder,evidence,inference]'
 ```
 
 For a Conda-based setup, use `conda env create -f environment.yml`. LLaVA is intentionally not
@@ -199,8 +199,6 @@ octantfake build --config configs/dataset_builder.yaml
 The builder fixes CLIP ViT-B/32 thresholds at `> 0.32` for matched candidates and `< 0.22` for
 mismatched candidates. Only `TFF` and `FFF` are completed through controlled cross-modal pairing.
 See [`docs/DATASET.md`](docs/DATASET.md) for adapters, pool schemas, invariants, and the frozen split.
-Maintainers can follow [`docs/DATASET_RELEASE.md`](docs/DATASET_RELEASE.md) to rebuild and publish the
-separate dataset repository.
 
 ## Reproduction
 
@@ -224,7 +222,6 @@ run-recording protocol is in [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md
 ├── data/                      Dataset card, exact manifests, and checksums
 ├── docs/                      Installation and reproducibility documentation
 ├── examples/                  Synthetic, offline smoke-test inputs
-├── scripts/                   Dataset release and upload utilities
 ├── src/octantfake_www/
 │   ├── builder/               Mapping, CLIP filtering, balancing, and splitting
 │   ├── evidence/              Search collectors and immutable evidence store
